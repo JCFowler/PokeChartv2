@@ -1,16 +1,22 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit } from '@angular/core';
+import { LanguageService } from '~/services';
+import { Device } from '@nativescript/core/platform';
+import { LocalStorage } from './storage/local-storage';
 
 @Component({
-    selector: "ns-app",
-    templateUrl: "app.component.html"
+    selector: 'ns-app',
+    templateUrl: 'app.component.html'
 })
 export class AppComponent implements OnInit {
 
-    constructor() {
-        // Use the component constructor to inject providers.
-    }
+    constructor(private languageService: LanguageService) {}
 
     ngOnInit(): void {
-        // Init your component properties here.
+        const language = LocalStorage.getLanguage();
+        if (language) {
+            this.languageService.setLanguage(language);
+        } else {
+            this.languageService.setLanguage(Device.language.split('-')[0]);
+        }
     }
 }

@@ -22,6 +22,9 @@
 
 // Custom tabstrip item class
 .navigation__item {
+    font-size: 20;
+    font-weight: 500;
+
     &:active,
     &:active Label {
         @include colorize($contrasted-color: complementary background 20% 0%);
@@ -43,4 +46,76 @@
         vertical-align: top;
         margin-top: 20%;
     }
+}
+
+.Normal {
+    background-color: #A8A878;
+}
+
+.Fire {
+    background-color: #F08030;
+}
+
+.Water {
+    background-color: #6890F0;
+}
+
+.Electric {
+    background-color: #F8D030;
+}
+
+.Grass {
+    background-color: #78C850;
+}
+
+.Ice {
+    background-color: #98D8D8;
+}
+
+.Fighting {
+    background-color: #C03028;
+}
+
+.Poison {
+    background-color: #A040A0;
+}
+
+.Ground {
+    background-color: #E0C068;
+}
+
+.Flying {
+    background-color: #A890F0;
+}
+
+.Psychic {
+    background-color: #F85888;
+}
+
+.Bug {
+    background-color: #A8B820;
+}
+
+.Rock {
+    background-color: #B8A038;
+}
+
+.Ghost {
+    background-color: #705898;
+}
+
+.Dragon {
+    background-color: #7038F8;
+}
+
+.Dark {
+    background-color: #705848;
+}
+
+.Steel {
+    background-color: #B8B8D0;
+}
+
+.Fairy {
+    background-color: #EE99AC;
 }

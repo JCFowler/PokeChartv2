@@ -1,5 +1,6 @@
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { NativeScriptCommonModule } from '@nativescript/angular';
+import { SharedModule } from '../shared/shared.module';
 
 import { AttackRoutingModule } from './attack-routing.module';
 import { AttackComponent } from './attack.component';
@@ -7,7 +8,8 @@ import { AttackComponent } from './attack.component';
 @NgModule({
     imports: [
         NativeScriptCommonModule,
-        AttackRoutingModule
+        AttackRoutingModule,
+        SharedModule
     ],
     declarations: [
         AttackComponent
