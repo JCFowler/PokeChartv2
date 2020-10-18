@@ -31,4 +31,8 @@ export class LanguageService {
     public getLanguage() {
         return this.translate.currentLang;
     }
+
+    public getTranslatedWord(key: string): string {
+        return this.translate.instant(key);
+    }
 }

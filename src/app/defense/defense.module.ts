@@ -1,5 +1,6 @@
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { NativeScriptCommonModule } from '@nativescript/angular';
+import { TranslateModule } from '@ngx-translate/core';
 import { SharedModule } from '../shared/shared.module';
 
 import { DefenseRoutingModule } from './defense-routing.module';
@@ -9,7 +10,8 @@ import { DefenseComponent } from './defense.component';
     imports: [
         NativeScriptCommonModule,
         DefenseRoutingModule,
-        SharedModule
+        SharedModule,
+        TranslateModule
     ],
     declarations: [
         DefenseComponent

@@ -11,6 +11,7 @@ export class ActionbarComponent implements OnInit {
 
   @Input() title: string;
   @Input() showBack = false;
+  @Input() color = '#123456';
 
   constructor(private languageService: LanguageService) {}
 

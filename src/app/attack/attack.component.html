@@ -1,7 +1,14 @@
-<ns-actionbar title="Attack"></ns-actionbar>
+<ns-actionbar [title]="'MAIN.Attack' | translate" [color]="selectedColor"></ns-actionbar>
 
-<GridLayout rows="3*, 2*">
-    <Label class="test" row="0" text="Attack"></Label>
+                              <!-- background="linear-gradient(0deg, #ffffff, #F8D030)"     -->
+<GridLayout rows="50, 3*, 2*" [background]="'linear-gradient(0deg, #ffffff, ' + selectedColor + ')'">
+    <GridLayout [class]="selectedType" height="100%" row="0">
+        <Label *ngIf="selectedType" class="typeHeaderText" [text]="'TYPE.' + selectedType | translate"></Label>
+    </GridLayout>
 
-    <ns-type-keyboard row="1"></ns-type-keyboard>
+    <GridLayout class="test" row='1' >
+
+    </GridLayout>
+
+    <ns-type-keyboard row="2" [singleType]="true" (typeTapped)="onTypeChanged($event)"></ns-type-keyboard>
 </GridLayout>

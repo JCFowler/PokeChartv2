@@ -18,5 +18,11 @@
     "Dark": "あく",
     "Steel": "はがね",
     "Fairy": "フェアリー"
+  },
+  "MAIN": {
+    "Attack": "攻撃",
+    "Defense": "防衛",
+    "ChangeLanguage": "言語を変える",
+    "Rate": "アプリを評価"
   }
 }

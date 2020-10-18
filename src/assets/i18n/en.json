@@ -18,5 +18,11 @@
     "Dark": "Dark",
     "Steel": "Steel",
     "Fairy": "Fairy"
+  },
+  "MAIN": {
+    "Attack": "Attack",
+    "Defense": "Defense",
+    "ChangeLanguage": "Change Language",
+    "Rate": "Rate App"
   }
 }

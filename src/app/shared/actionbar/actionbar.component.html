@@ -1,9 +1,9 @@
-<ActionBar class="action-bar" height="auto">
+<ActionBar height="44" [backgroundColor]="color">
     <!-- Android & iOS Back Button -->
     <!-- <NavigationButton *ngIf="showBack" android:android.systemIcon="ic_menu_back" (tap)="onAndroidBack()"></NavigationButton> -->
 
     <ActionItem color="#ffffff" (tap)="languageTap()" text="Change Language" ios.position="popup" android.position="popup"></ActionItem>
     <ActionItem color="#ffffff" (tap)="rateTap()" text="Rate App" ios.position="popup" android.position="popup"></ActionItem>
 
-    <Label class="action-bar-title" [text]="title"></Label>
+    <Label class="title" [text]="title"></Label>
 </ActionBar>

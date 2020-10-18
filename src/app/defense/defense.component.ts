@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PokemonType } from '~/enums';
 
 @Component({
     selector: 'Defense',
@@ -6,11 +7,24 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./defense.component.scss']
 })
 export class DefenseComponent implements OnInit {
-    constructor() {
-        // Use the component constructor to inject providers.
-    }
 
-    ngOnInit(): void {
-        // Use the "ngOnInit" handler to initialize data for the view.
+    public selectedTypes = ['', ''];
+
+    constructor() {}
+
+    ngOnInit(): void {}
+
+    onTypeChanged(type: PokemonType[]) {
+        if (type[0] !== PokemonType.None) {
+            this.selectedTypes[0] = PokemonType[type[0]];
+        } else {
+            this.selectedTypes[0] = '';
+        }
+
+        if (type[1] !== PokemonType.None) {
+            this.selectedTypes[1] = PokemonType[type[1]];
+        } else {
+            this.selectedTypes[1] = '';
+        }
     }
 }

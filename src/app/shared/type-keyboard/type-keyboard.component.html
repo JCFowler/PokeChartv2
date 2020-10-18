@@ -1,20 +1,20 @@
 <GridLayout columns="*, *, *" rows="*, *, *, *, *, *">
-    <Label (tap)="typeTapped(0, 'Normal')" [class.selected]="selectedTypes[0]" class="Normal" col="0" row="0" [text]="'TYPE.Normal' | translate"></Label>
-    <Label (tap)="typeTapped(1, 'Fire')" [class.selected]="selectedTypes[1]" class="Fire" col="1" row="0" [text]="'TYPE.Fire' | translate"></Label>
-    <Label (tap)="typeTapped(2, 'Water')" [class.selected]="selectedTypes[2]" class="Water" col="2" row="0" [text]="'TYPE.Water' | translate"></Label>
-    <Label (tap)="typeTapped(3, 'Electric')" [class.selected]="selectedTypes[3]" class="Electric" col="0" row="1" [text]="'TYPE.Electric' | translate"></Label>
-    <Label (tap)="typeTapped(4, 'Grass')" [class.selected]="selectedTypes[4]" class="Grass" col="1" row="1" [text]="'TYPE.Grass' | translate"></Label>
-    <Label (tap)="typeTapped(5, 'Ice')" [class.selected]="selectedTypes[5]" class="Ice" col="2" row="1" [text]="'TYPE.Ice' | translate"></Label>
-    <Label (tap)="typeTapped(6, 'Fighting')" [class.selected]="selectedTypes[6]" class="Fighting" col="0" row="2" [text]="'TYPE.Fighting' | translate"></Label>
-    <Label (tap)="typeTapped(7, 'Poison')" [class.selected]="selectedTypes[7]" class="Poison" col="1" row="2" [text]="'TYPE.Poison' | translate"></Label>
-    <Label (tap)="typeTapped(8, 'Ground')" [class.selected]="selectedTypes[8]" class="Ground" col="2" row="2" [text]="'TYPE.Ground' | translate"></Label>
-    <Label (tap)="typeTapped(9, 'Flying')" [class.selected]="selectedTypes[9]" class="Flying" col="0" row="3" [text]="'TYPE.Flying' | translate"></Label>
-    <Label (tap)="typeTapped(10, 'Psychic')" [class.selected]="selectedTypes[10]" class="Psychic" col="1" row="3" [text]="'TYPE.Psychic' | translate"></Label>
-    <Label (tap)="typeTapped(11, 'Bug')" [class.selected]="selectedTypes[11]" class="Bug" col="2" row="3" [text]="'TYPE.Bug' | translate"></Label>
-    <Label (tap)="typeTapped(12, 'Rock')" [class.selected]="selectedTypes[12]" class="Rock" col="0" row="4" [text]="'TYPE.Rock' | translate"></Label>
-    <Label (tap)="typeTapped(13, 'Ghost')" [class.selected]="selectedTypes[13]" class="Ghost" col="1" row="4" [text]="'TYPE.Ghost' | translate"></Label>
-    <Label (tap)="typeTapped(14, 'Dragon')" [class.selected]="selectedTypes[14]" class="Dragon" col="2" row="4" [text]="'TYPE.Dragon' | translate"></Label>
-    <Label (tap)="typeTapped(15, 'Dark')" [class.selected]="selectedTypes[15]" class="Dark" col="0" row="5" [text]="'TYPE.Dark' | translate"></Label>
-    <Label (tap)="typeTapped(16, 'Steel')" [class.selected]="selectedTypes[16]" class="Steel" col="1" row="5" [text]="'TYPE.Steel' | translate"></Label>
-    <Label (tap)="typeTapped(17, 'Fairy')" [class.selected]="selectedTypes[17]" class="Fairy" col="2" row="5" [text]="'TYPE.Fairy' | translate"></Label>
+    <Label (tap)="onTypeTapped(0)" [class.selected]="selectedTypes[0]" class="Normal" col="0" row="0" [text]="'TYPE.Normal' | translate"></Label>
+    <Label (tap)="onTypeTapped(1)" [class.selected]="selectedTypes[1]" class="Fire" col="1" row="0" [text]="'TYPE.Fire' | translate"></Label>
+    <Label (tap)="onTypeTapped(2)" [class.selected]="selectedTypes[2]" class="Water" col="2" row="0" [text]="'TYPE.Water' | translate"></Label>
+    <Label (tap)="onTypeTapped(3)" [class.selected]="selectedTypes[3]" class="Electric" col="0" row="1" [text]="'TYPE.Electric' | translate"></Label>
+    <Label (tap)="onTypeTapped(4)" [class.selected]="selectedTypes[4]" class="Grass" col="1" row="1" [text]="'TYPE.Grass' | translate"></Label>
+    <Label (tap)="onTypeTapped(5)" [class.selected]="selectedTypes[5]" class="Ice" col="2" row="1" [text]="'TYPE.Ice' | translate"></Label>
+    <Label (tap)="onTypeTapped(6)" [class.selected]="selectedTypes[6]" class="Fighting" col="0" row="2" [text]="'TYPE.Fighting' | translate"></Label>
+    <Label (tap)="onTypeTapped(7)" [class.selected]="selectedTypes[7]" class="Poison" col="1" row="2" [text]="'TYPE.Poison' | translate"></Label>
+    <Label (tap)="onTypeTapped(8)" [class.selected]="selectedTypes[8]" class="Ground" col="2" row="2" [text]="'TYPE.Ground' | translate"></Label>
+    <Label (tap)="onTypeTapped(9)" [class.selected]="selectedTypes[9]" class="Flying" col="0" row="3" [text]="'TYPE.Flying' | translate"></Label>
+    <Label (tap)="onTypeTapped(10)" [class.selected]="selectedTypes[10]" class="Psychic" col="1" row="3" [text]="'TYPE.Psychic' | translate"></Label>
+    <Label (tap)="onTypeTapped(11)" [class.selected]="selectedTypes[11]" class="Bug" col="2" row="3" [text]="'TYPE.Bug' | translate"></Label>
+    <Label (tap)="onTypeTapped(12)" [class.selected]="selectedTypes[12]" class="Rock" col="0" row="4" [text]="'TYPE.Rock' | translate"></Label>
+    <Label (tap)="onTypeTapped(13)" [class.selected]="selectedTypes[13]" class="Ghost" col="1" row="4" [text]="'TYPE.Ghost' | translate"></Label>
+    <Label (tap)="onTypeTapped(14)" [class.selected]="selectedTypes[14]" class="Dragon" col="2" row="4" [text]="'TYPE.Dragon' | translate"></Label>
+    <Label (tap)="onTypeTapped(15)" [class.selected]="selectedTypes[15]" class="Dark" col="0" row="5" [text]="'TYPE.Dark' | translate"></Label>
+    <Label (tap)="onTypeTapped(16)" [class.selected]="selectedTypes[16]" class="Steel" col="1" row="5" [text]="'TYPE.Steel' | translate"></Label>
+    <Label (tap)="onTypeTapped(17)" [class.selected]="selectedTypes[17]" class="Fairy" col="2" row="5" [text]="'TYPE.Fairy' | translate"></Label>
 </GridLayout>

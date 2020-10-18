@@ -1,6 +1,18 @@
-<ns-actionbar title="Defense"></ns-actionbar>
+<ns-actionbar [title]="'MAIN.Defense' | translate">></ns-actionbar>
 
-<GridLayout class="page__content">
-    <Label class="page__content-icon far" text="&#xf1ea;"></Label>
-    <Label class="test" text="Defense"></Label>
+<GridLayout rows="50, 3*, 2*">
+    <GridLayout row="0" columns="*, *">
+        <GridLayout [class]="selectedTypes[0]" height="100%" col="0">
+            <Label class="typeHeaderText" [text]="'TYPE.' + selectedTypes[0] | translate"></Label>
+        </GridLayout>
+        <GridLayout [class]="selectedTypes[1]" height="100%" col="1">
+            <Label class="typeHeaderText" [text]="'TYPE.' + selectedTypes[1] | translate"></Label>
+        </GridLayout>
+    </GridLayout>
+
+    <GridLayout row='1'>
+
+    </GridLayout>
+
+    <ns-type-keyboard row="2" (typeTapped)="onTypeChanged($event)"></ns-type-keyboard>
 </GridLayout>
